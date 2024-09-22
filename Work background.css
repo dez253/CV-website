@@ -1,0 +1,154 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(120deg, #f0f3f5 25%, #ffffff 50%, #eaeaea 75%);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Table Styles */
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 40px auto;
+    border: 10px solid #333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+th, td {
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #4a90e2; /* Vibrant blue */
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #333;
+}
+
+td {
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+td:hover {
+    background-color: #f0f0f0; /* Slight hover effect */
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #34495e;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #3498db;
+    letter-spacing: 0.5px;
+}
+
+b, strong {
+    font-weight: 700;
+    color: #34495e;
+}
+
+u {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #357ab8;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    th, td {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 10px 18px;
+    }
+}
+
+/* Subtle transitions for links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* Add some flair with animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body, table {
+    animation: fadeIn 0.5s ease-in-out;
+}

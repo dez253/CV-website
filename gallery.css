@@ -1,0 +1,92 @@
+/* style.css */
+
+/* Global Settings */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Soft gradient background */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #333 0%, #444 100%);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    text-transform: uppercase;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f5ba31; /* Golden color for header title */
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.gallery video, .gallery img {
+    width: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for images/videos */
+}
+
+.gallery img:hover, .gallery video:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    background: linear-gradient(135deg, #337ab7 0%, #23527c 100%); /* Gradient button */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Button shadow */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #23527c 0%, #1e4160 100%);
+    transform: translateY(-3px); /* Slight button lift */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .gallery video, .gallery img {
+        width: 100%; /* Make media flexible on smaller screens */
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}
