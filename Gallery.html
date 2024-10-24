@@ -1,21 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gallery</title>
-        <link rel="stylesheet" href="gallery.css"> <!-- link to external stylesheet -->
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="gallery.css"> <!-- External CSS -->
     </head>
     <body>
-        <header>
-            <h1><b><u>MY NETWORKING WORK</u></b></h1>
-        </header>
-        <section class="gallery">
-            <video src="vid2.webm" controls width="350px" height="350px"></video>
-            <video src="vid1.webm" controls width="350px" height="350px"></video>
-            <img src="pic2.png" width="350px" height="350px">
-            <img src="pic1.png" width="350px" height="350px">
-        </section>
-        <nav>
-            <button onclick="location.href='Homepage.html'">Back</button>
-        </nav>
+        <div class="container my-5">
+           
+            <header class="text-center mb-5">
+                <h1 class="display-4"><b><u>MY NETWORKING WORK</u></b></h1>
+            </header>
+
+           
+            <section class="row">
+                <!-- Video 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video src="vid2.webm" controls class="embed-responsive-item"></video>
+                    </div>
+                </div>
+
+               
+                <div class="col-md-6 mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video src="vid1.webm" controls class="embed-responsive-item"></video>
+                    </div>
+                </div>
+
+               
+                <div class="col-md-6 mb-4">
+                    <img src="pic2.png" class="img-fluid img-thumbnail" alt="Networking Project 1">
+                </div>
+
+               
+                <div class="col-md-6 mb-4">
+                    <img src="pic1.png" class="img-fluid img-thumbnail" alt="Networking Project 2">
+                </div>
+            </section>
+
+                    <nav class="text-center mt-4">
+                <button class="btn btn-primary" onclick="location.href='Homepage.html'">Back</button>
+            </nav>
+        </div>
+
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
